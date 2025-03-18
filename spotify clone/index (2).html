@@ -1,0 +1,265 @@
+<html>
+ <head>
+  <title>
+   Spotify Clone
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #FFFFFF;
+        }
+        .sidebar {
+            width: 240px;
+            height: 100vh;
+            background-color: #000000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .sidebar img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            color: #B3B3B3;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .sidebar a:hover {
+            color: #FFFFFF;
+        }
+        .main-content {
+            margin-left: 240px;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header input {
+            width: 300px;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background-color: #282828;
+            color: #FFFFFF;
+        }
+        .header .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .header .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .header .user-info span {
+            font-size: 14px;
+        }
+        .playlist {
+            margin-top: 20px;
+        }
+        .playlist h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .playlist .playlist-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .playlist .playlist-item img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+        .playlist .playlist-item .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .playlist .playlist-item .info span {
+            font-size: 14px;
+        }
+        .playlist .playlist-item .info span.title {
+            font-weight: 500;
+        }
+        .playlist .playlist-item .info span.artist {
+            color: #B3B3B3;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 240px;
+            right: 0;
+            background-color: #282828;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .footer .controls {
+            display: flex;
+            align-items: center;
+        }
+        .footer .controls i {
+            color: #B3B3B3;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .footer .controls i:hover {
+            color: #FFFFFF;
+        }
+        .footer .progress {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .footer .progress input {
+            width: 100%;
+        }
+        .footer .volume {
+            display: flex;
+            align-items: center;
+        }
+        .footer .volume i {
+            color: #B3B3B3;
+            margin-right: 10px;
+        }
+        .footer .volume input {
+            width: 100px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="sidebar">
+   <img alt="Spotify logo" height="50" src="https://storage.googleapis.com/a1aa/image/yG-G9a366Cxmd10ZzBkbnrKTIOIjmuqTfLSnw0rcfXk.jpg" width="150"/>
+   <a href="#">
+    <i class="fas fa-home">
+    </i>
+    Home
+   </a>
+   <a href="#">
+    <i class="fas fa-search">
+    </i>
+    Search
+   </a>
+   <a href="#">
+    <i class="fas fa-book">
+    </i>
+    Your Library
+   </a>
+   <a href="#">
+    <i class="fas fa-plus-square">
+    </i>
+    Create Playlist
+   </a>
+   <a href="#">
+    <i class="fas fa-heart">
+    </i>
+    Liked Songs
+   </a>
+  </div>
+  <div class="main-content">
+   <div class="header">
+    <input placeholder="Search" type="text"/>
+    <div class="user-info">
+     <img alt="User avatar" height="40" src="https://storage.googleapis.com/a1aa/image/qB8-84HUoc67oORStDtL2JPii7s3EnpZTSUstemLQeQ.jpg" width="40"/>
+     <span>
+      Username
+     </span>
+    </div>
+   </div>
+   <div class="playlist">
+    <h2>
+     Recently Played
+    </h2>
+    <div class="playlist-item">
+     <img alt="Album cover 1" height="60" src="https://storage.googleapis.com/a1aa/image/HCOTUhZRBDb8FfZ1w2hiGeotKVv64EGvygzTXkHN8cw.jpg" width="60"/>
+     <div class="info">
+      <span class="title">
+       Song Title 1
+      </span>
+      <span class="artist">
+       Artist Name 1
+      </span>
+     </div>
+    </div>
+    <div class="playlist-item">
+     <img alt="Album cover 2" height="60" src="https://storage.googleapis.com/a1aa/image/ki0y95czYtdHMuVz6oYwDBQmHPMWMK9j3Nom-wzMvSc.jpg" width="60"/>
+     <div class="info">
+      <span class="title">
+       Song Title 2
+      </span>
+      <span class="artist">
+       Artist Name 2
+      </span>
+     </div>
+    </div>
+    <div class="playlist-item">
+     <img alt="Album cover 3" height="60" src="https://storage.googleapis.com/a1aa/image/HhxRwiQASTS7bqjIiXye6MVqZrC7tCG9dFzJgkKfyn8.jpg" width="60"/>
+     <div class="info">
+      <span class="title">
+       Song Title 3
+      </span>
+      <span class="artist">
+       Artist Name 3
+      </span>
+     </div>
+    </div>
+    <div class="playlist-item">
+     <img alt="Album cover 4" height="60" src="https://storage.googleapis.com/a1aa/image/sGcoB5nubLhe3DOOG-okVrBLwnXvdEDpxY29hsybhi4.jpg" width="60"/>
+     <div class="info">
+      <span class="title">
+       Song Title 4
+      </span>
+      <span class="artist">
+       Artist Name 4
+      </span>
+     </div>
+    </div>
+    <div class="playlist-item">
+     <img alt="Album cover 5" height="60" src="https://storage.googleapis.com/a1aa/image/bweMk1YIkFeNXMfizPM55VflyRVOERI11KxRlRWjZF4.jpg" width="60"/>
+     <div class="info">
+      <span class="title">
+       Song Title 5
+      </span>
+      <span class="artist">
+       Artist Name 5
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   <div class="controls">
+    <i class="fas fa-random">
+    </i>
+    <i class="fas fa-step-backward">
+    </i>
+    <i class="fas fa-play-circle">
+    </i>
+    <i class="fas fa-step-forward">
+    </i>
+    <i class="fas fa-redo">
+    </i>
+   </div>
+   <div class="progress">
+    <input max="100" min="0" type="range" value="50"/>
+   </div>
+   <div class="volume">
+    <i class="fas fa-volume-up">
+    </i>
+    <input max="100" min="0" type="range" value="50"/>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website with Nested Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 30px;
+            background-color: #333;
+            color: white;
+        }
+
+        .navbar .main-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+            transition: background 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .sub-nav {
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #444;
+            border-radius: 8px;
+        }
+
+        .sub-nav a {
+            padding: 6px 12px;
+            display: block;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .nav-links {
+                flex-direction: column;
+                display: none;
+            }
+
+            .navbar.active .nav-links {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="main-nav">
+            <div class="logo">ShopEase</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="sub-nav">
+            <a href="#electronics">Electronics</a>
+            <a href="#clothing">Clothing</a>
+            <a href="#home-garden">Home & Garden</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to ShopEase</h1>
+        <p>Your one-stop shop for all your needs!</p>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

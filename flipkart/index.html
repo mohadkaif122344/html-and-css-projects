@@ -1,0 +1,256 @@
+<html>
+ <head>
+  <title>
+   Flipkart Clone
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f3f6;
+        }
+        .header {
+            background-color: #2874f0;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .header .search-bar {
+            flex: 1;
+            margin: 0 20px;
+            display: flex;
+        }
+        .header .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 2px 0 0 2px;
+        }
+        .header .search-bar button {
+            padding: 10px;
+            background-color: #ffeb3b;
+            border: none;
+            border-radius: 0 2px 2px 0;
+            cursor: pointer;
+        }
+        .header .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav-links a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+        .categories {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .category {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 4px;
+            flex: 1;
+            margin: 0 10px;
+        }
+        .category img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            width: 23%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .product .name {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .product .price {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2874f0;
+        }
+        .footer {
+            background-color: #2874f0;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="logo">
+    Flipkart
+   </div>
+   <div class="search-bar">
+    <input placeholder="Search for products, brands and more" type="text"/>
+    <button>
+     <i class="fas fa-search">
+     </i>
+    </button>
+   </div>
+   <div class="nav-links">
+    <a href="#">
+     Login
+    </a>
+    <a href="#">
+     More
+    </a>
+    <a href="#">
+     <i class="fas fa-shopping-cart">
+     </i>
+     Cart
+    </a>
+   </div>
+  </div>
+  <div class="main-content">
+   <div class="carousel">
+    <img alt="Promotional banner with various products and offers" height="400" src="https://storage.googleapis.com/a1aa/image/l30Sou7VAIN3SHjffInFJoXsVKOR4iZLhcrSEXMhPus.jpg" width="1200"/>
+   </div>
+   <div class="categories">
+    <div class="category">
+     <img alt="Category image for Electronics" height="100" src="https://storage.googleapis.com/a1aa/image/S6EvRg9C4k-6N9h6p79WQeDB0EP7hSZAox0fwSo5PFk.jpg" width="100"/>
+     <div>
+      Electronics
+     </div>
+    </div>
+    <div class="category">
+     <img alt="Category image for Fashion" height="100" src="https://storage.googleapis.com/a1aa/image/JoB_FPzLwBTdcw7Vi-XqXobDffkllHzGCTboetGn28Y.jpg" width="100"/>
+     <div>
+      Fashion
+     </div>
+    </div>
+    <div class="category">
+     <img alt="Category image for Home Appliances" height="100" src="https://storage.googleapis.com/a1aa/image/heoGM_yMbNZ8Yks98gwDBMHEfRvSiISBEnA96eAv3xM.jpg" width="100"/>
+     <div>
+      Home Appliances
+     </div>
+    </div>
+    <div class="category">
+     <img alt="Category image for Books" height="100" src="https://storage.googleapis.com/a1aa/image/W_7tuqCQjqc755j0IjLCc2-bNwqQuUp6UbMZx7rSfJk.jpg" width="100"/>
+     <div>
+      Books
+     </div>
+    </div>
+   </div>
+   <div class="products">
+    <div class="product">
+     <img alt="Product image of a smartphone" height="200" src="https://storage.googleapis.com/a1aa/image/bzJhMeSW6Mv_uFYKqZ8Vd9x6hfel_PCAsqnR2bbVbJ8.jpg" width="200"/>
+     <div class="name">
+      Smartphone
+     </div>
+     <div class="price">
+      $299
+     </div>
+    </div>
+    <div class="product">
+     <img alt="Product image of a laptop" height="200" src="https://storage.googleapis.com/a1aa/image/rKUInoird0vYXv4MeN9joluNMIQGfZ8QWfEgvzSZkrc.jpg" width="200"/>
+     <div class="name">
+      Laptop
+     </div>
+     <div class="price">
+      $799
+     </div>
+    </div>
+    <div class="product">
+     <img alt="Product image of a smartwatch" height="200" src="https://storage.googleapis.com/a1aa/image/skn8zThQR-jiX53Rl-keXQyEEXz7qo9Osk5CndQHw9Y.jpg" width="200"/>
+     <div class="name">
+      Smartwatch
+     </div>
+     <div class="price">
+      $199
+     </div>
+    </div>
+    <div class="product">
+     <img alt="Product image of a pair of headphones" height="200" src="https://storage.googleapis.com/a1aa/image/ucl4wcNE_iP6RbSPXpeDCT6gt76Sv2_aoHmZifDtw_Q.jpg" width="200"/>
+     <div class="name">
+      Headphones
+     </div>
+     <div class="price">
+      $99
+     </div>
+    </div>
+    <div class="product">
+     <img alt="Product image of a television" height="200" src="https://storage.googleapis.com/a1aa/image/Gc6bevrxR9Wn6oAYG-13PyNxNAq32uQYeJtnaOxcZw4.jpg" width="200"/>
+     <div class="name">
+      Television
+     </div>
+     <div class="price">
+      $499
+     </div>
+    </div>
+    <div class="product">
+     <img alt="Product image of a refrigerator" height="200" src="https://storage.googleapis.com/a1aa/image/9BTqee3QxqakMRxCLT-DSOkbE1_xbc2GzzVuXbjtzZc.jpg" width="200"/>
+     <div class="name">
+      Refrigerator
+     </div>
+     <div class="price">
+      $699
+     </div>
+    </div>
+    <div class="product">
+     <img alt="Product image of a washing machine" height="200" src="https://storage.googleapis.com/a1aa/image/UzdNRs_G_ZGPJYjpiZOytJlNr_14l7V-SXV84uxCMYg.jpg" width="200"/>
+     <div class="name">
+      Washing Machine
+     </div>
+     <div class="price">
+      $399
+     </div>
+    </div>
+    <div class="product">
+     <img alt="Product image of a microwave oven" height="200" src="https://storage.googleapis.com/a1aa/image/7NTaJMJUOw_raA-qMr6QRbiPLdAUo8phgUIctRJelnE.jpg" width="200"/>
+     <div class="name">
+      Microwave Oven
+     </div>
+     <div class="price">
+      $149
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   © 2023 Flipkart Clone. All rights reserved.
+  </div>
+ </body>
+</html>

@@ -1,0 +1,242 @@
+<html>
+ <head>
+  <title>
+   Netflix Clone
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #141414;
+            color: #fff;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #141414;
+        }
+        .navbar img {
+            width: 100px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin-left: 20px;
+        }
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .hero {
+            position: relative;
+            height: 80vh;
+            background: url('https://placehold.co/1920x1080') no-repeat center center/cover;
+        }
+        .hero .content {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+        }
+        .hero .content h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero .content p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        .hero .content button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #e50914;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .section {
+            padding: 20px;
+        }
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .row {
+            display: flex;
+            overflow-x: scroll;
+        }
+        .row::-webkit-scrollbar {
+            display: none;
+        }
+        .row .card {
+            min-width: 200px;
+            margin-right: 10px;
+        }
+        .row .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .footer {
+            padding: 20px;
+            background-color: #141414;
+            text-align: center;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <img alt="Netflix Logo" height="50" src="https://storage.googleapis.com/a1aa/image/vU7-IZf90yqLcvPjWxR7yaWzwqaQi9O5XkELllqxxkc.jpg" width="100"/>
+   <ul>
+    <li>
+     <a href="#">
+      Home
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      TV Shows
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      Movies
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      New &amp; Popular
+     </a>
+    </li>
+    <li>
+     <a href="#">
+      My List
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div class="hero">
+   <div class="content">
+    <h1>
+     Featured Movie
+    </h1>
+    <p>
+     Watch the latest blockbuster now.
+    </p>
+    <button>
+     Play
+    </button>
+   </div>
+  </div>
+  <div class="section">
+   <h2>
+    Trending Now
+   </h2>
+   <div class="row">
+    <div class="card">
+     <img alt="Trending Movie 1" height="300" src="https://storage.googleapis.com/a1aa/image/Z_3i0gY8Kv1uGWBIbFU3mZs6SLM2Cn3OAoydl__6YHM.jpg" width="200"/>
+    </div>
+    <div class="card">
+     <img alt="Trending Movie 2" height="300" src="https://storage.googleapis.com/a1aa/image/hUl_fg6h0IBqTDcxUokLu59wy5UCSd-aCHneFG8Mzhw.jpg" width="200"/>
+    </div>
+    <div class="card">
+     <img alt="Trending Movie 3" height="300" src="https://storage.googleapis.com/a1aa/image/1ViZUIQaxJ9PK4E_3feSNAuTWEEDcohC3_5TVcGU0D0.jpg" width="200"/>
+    </div>
+    <div class="card">
+     <img alt="Trending Movie 4" height="300" src="https://storage.googleapis.com/a1aa/image/CHO6WvtMgOHCbe2ootPBwUiBUkOKPsa-ZNmVhmtD2zE.jpg" width="200"/>
+    </div>
+    <div class="card">
+     <img alt="Trending Movie 5" height="300" src="https://storage.googleapis.com/a1aa/image/yxpSSfFkP8CrQ4XATWUm-9dH8bT1EA2Daa6037vA2JI.jpg" width="200"/>
+    </div>
+   </div>
+  </div>
+  <div class="section">
+   <h2>
+    Popular on Netflix
+   </h2>
+   <div class="row">
+    <div class="card">
+     <img alt="Popular Movie 1" height="300" src="https://storage.googleapis.com/a1aa/image/BhwMPHrvSwWpimzHNlsrMDuarY3z-bJCJ9l7XaaEy48.jpg" width="200"/>
+    </div>
+    <div class="card">
+     <img alt="Popular Movie 2" height="300" src="https://storage.googleapis.com/a1aa/image/dprCgknmq4wktOCSTNkgCJ0nf1EBGE8m1ecpI2fEjfo.jpg" width="200"/>
+    </div>
+    <div class="card">
+     <img alt="Popular Movie 3" height="300" src="https://storage.googleapis.com/a1aa/image/S99kkA6xKiVe_5jgRkNa8WA71bLt7qBm6Gorzlr3MCo.jpg" width="200"/>
+    </div>
+    <div class="card">
+     <img alt="Popular Movie 4" height="300" src="https://storage.googleapis.com/a1aa/image/Bxrnyo8i6XUyY9hTv1zCo4OZEdlIOjt1NYObvmIOfpk.jpg" width="200"/>
+    </div>
+    <div class="card">
+     <img alt="Popular Movie 5" height="300" src="https://storage.googleapis.com/a1aa/image/P900-96Xjffx-Hlx9Nm8YcTPGqRADLwCBeabl6IulFU.jpg" width="200"/>
+    </div>
+   </div>
+  </div>
+  <div class="section">
+   <h2>
+    New Releases
+   </h2>
+   <div class="row">
+    <div class="card">
+     <img alt="New Release 1" height="300" src="https://storage.googleapis.com/a1aa/image/IgEasGjo6fR7kbjbfUAorgLUvlcyYqUGNaERZlw991E.jpg" width="200"/>
+    </div>
+    <div class="card">
+     <img alt="New Release 2" height="300" src="https://storage.googleapis.com/a1aa/image/j-dopob--SfuNokL3WHWHObHAT0x-cdagQqg-m319hw.jpg" width="200"/>
+    </div>
+    <div class="card">
+     <img alt="New Release 3" height="300" src="https://storage.googleapis.com/a1aa/image/x70e-HTZ4bi4fjlABjKtL-nMJRbRU-Hw8Xa1OeusZcc.jpg" width="200"/>
+    </div>
+    <div class="card">
+     <img alt="New Release 4" height="300" src="https://storage.googleapis.com/a1aa/image/1AolwKY4f2g7r1L6GwP2bX9wFu0uMVoDEGsaFHM1hPM.jpg" width="200"/>
+    </div>
+    <div class="card">
+     <img alt="New Release 5" height="300" src="https://storage.googleapis.com/a1aa/image/syiWmrm8z3aJC8Uypo15CazUNo8q0rd4YwSYJF_49ps.jpg" width="200"/>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   <p>
+    Questions? Call 1-800-000-0000
+   </p>
+   <p>
+    <a href="#">
+     FAQ
+    </a>
+    |
+    <a href="#">
+     Help Center
+    </a>
+    |
+    <a href="#">
+     Terms of Use
+    </a>
+    |
+    <a href="#">
+     Privacy
+    </a>
+    |
+    <a href="#">
+     Cookie Preferences
+    </a>
+    |
+    <a href="#">
+     Corporate Information
+    </a>
+   </p>
+  </div>
+ </body>
+</html>

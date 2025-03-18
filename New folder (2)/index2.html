@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #bc6c3e;
+            color: rgb(27, 6, 6);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: rgb(16, 6, 6);
+            padding: 8px 16px;
+            transition: background 0.3s;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            background-color: #2f0bc0;
+            border-radius: 4px;
+        }
+
+        .navbar .logo {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .nav-links {
+                flex-direction: column;
+                display: none;
+            }
+
+            .navbar.active .nav-links {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: rgb(35, 72, 112);
+        }
+
+        /* Website Content Sections */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .home {
+            background-color: #c6abab;
+        }
+
+        .about {
+            background-color: #9d8383;
+        }
+
+        .services {
+            background-color: hsl(247, 15%, 46%);
+        }
+
+        .contact {
+            background-color: #d774ab;
+            color: rgb(41, 5, 91);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <section id="home" class="home">
+        <h1>Welcome to My Website</h1>
+        <p>Your journey starts here.</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Learn more about what we do.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p>Discover the services we offer.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for more information.</p>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
